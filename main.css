@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Learn about destructuring */
+body{
+    margin: 10px;
+    /* height: 100vh; */
+    background: #333;
+}
+
+.container{
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 5px;
+}
+
+div.main-img{
+    width: 100%;
+    background-size: cover;
+}
+
+div.main-img img{
+    width: 100%;
+    height: 400px;
+}
+
+div.images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+
+div.images img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+    }
+}
+
+.opacity-increase{
+    opacity: 0;
+    animation: fadeIn 0.5s 1 forwards ease-in;
+}
